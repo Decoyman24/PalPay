@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "SteamIcon.png",
+      "filename" : "SteamIcon.svg",
       "idiom" : "universal",
       "scale" : "1x"
     },

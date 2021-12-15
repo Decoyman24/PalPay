@@ -15,8 +15,8 @@ struct TransactionView: View {
         
         HStack(spacing: 5){
             ZStack{
-                Circle()
-                    .frame(width: 40, height: 40)
+//                Circle()
+//                    .frame(width: 40, height: 40)
                 Image(transPic)
             }.padding(.leading, 5)
             VStack(alignment: .leading, spacing: 0){

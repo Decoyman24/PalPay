@@ -13,8 +13,6 @@ struct ProfileView: View {
     var body: some View {
         VStack{
         ZStack{
-        Circle()
-            .frame(height: 60)
         Image(profilePic)
     }
             Text(profileName)
