@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct OverView: View {
+    let feedback = UINotificationFeedbackGenerator()
     var body: some View {
         ScrollView(.vertical, showsIndicators: false){
             ZStack{
@@ -24,8 +25,16 @@ struct OverView: View {
                     VStack{
                         CardView()
                         HStack{
-                            PayButtonView(imageName: "PayIconas", actionName: "Pay")
+                            Button{
+                                feedback.notificationOccurred(.success)
+                            } label: {
+                                PayButtonView(imageName: "PayIconas", actionName: "Pay")
+                            }
+                            Button{
+                                feedback.notificationOccurred(.success)
+                            } label: {
                             ReceiveButtonView(imageName: "ReceiveIcon-1", actionName: "Get Paid")
+                            }
                         }
                     }.padding()
                     ZStack{
