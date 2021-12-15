@@ -24,20 +24,20 @@ struct WalletView: View {
                     .offset(y:60)
                 VStack(spacing:20){
                     HStack{
-                        Text("Wallet").font(.largeTitle).fontWeight(.bold).padding(.leading, 30).padding(.top)
+                        Text("Wallet").font(.largeTitle).fontWeight(.bold).padding(.leading, 10).padding(.top)
                         Spacer()
                         UserProfileView(profilePic: "UserPic").padding(.trailing).padding(.top)
                     }.padding(.horizontal)
                     ZStack{
-                        Rectangle()
-                            .frame(width: 440, height: 40)
-                            .foregroundColor(.white)
-                            .offset(y:-268)
+//                        Rectangle()
+//                            .frame(width: 440, height: 40)
+//                            .foregroundColor(.white)
+//                            .offset(y:-268)
                         VStack(alignment: .center){
                             HStack(){
                                 Text("Debit cards and bank accounts")
-                                    .font(.title3)
-                                    .frame(width: 280, height:30)
+                                    .font(.title2)
+                                    .frame(width: 300, height:30)
                                     .foregroundColor(Color(red: 91/256, green: 86/256, blue: 86/256))
                                 
                                 PlusView(imageName: "plus").padding(.leading, 60)
