@@ -84,7 +84,7 @@ struct OverView: View {
                                     .foregroundColor(Color(red: 40/256, green: 53/256, blue: 106/256))
                                     .padding(.top, 5)
                                     .padding(.bottom, 20)
-                                    .padding(.leading, 150)
+                                    .padding(.leading, 155)
                             }
                             
                         }
